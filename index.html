@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container py-4">
+    <section>
+        <header class="pb-3 mb-4 border-bottom">
+            <span class="fs-4 text-body-emphasis">Jobs App</span>
+        </header>
+    </section>
+    
+    <section>
+       <div class="p-2 mb-4 bg-body-tertiary rounded-3">
+            <h2 class="mb-2">New Job</h2>
+            <input type="text" id="new-job-name" class="form-control mb-2" placeholder="Job Name">
+            <input type="text" id="time-estimate" class="form-control mb-2" placeholder="Hourly Time Estimate">
+            <h3 class="">Today's Date</h3>
+            <input type="date" class="form-control mb-2" id="post-date">
+            <button id="create-job" class="btn btn-primary form-control">Create Job</button>
+       </div>   
+    </section>
+
+    <section>
+        <div id="app"></div>
+    </section>
+    
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
